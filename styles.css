@@ -98,7 +98,7 @@ body {
     text-decoration: none;
     font-weight: 600;
     font-size: 1.1rem;
-    transition: transform 0.2s, box-shadow 0.2s;
+transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .cta-button:hover {
@@ -185,9 +185,73 @@ section h2 {
     color: var(--orange);
 }
 
+/* Medien Bereich */
+.medien {
+    background: var(--white);
+}
+
+.section-intro {
+    text-align: center;
+    color: var(--gray);
+    max-width: 600px;
+    margin: 0 auto 50px;
+    font-size: 1.1rem;
+}
+
+.medien-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.medien-item {
+    display: flex;
+    gap: 25px;
+    padding: 30px;
+    background: var(--light-gray);
+    border-radius: 16px;
+    margin-bottom: 20px;
+    transition: transform 0.2s;
+}
+
+.medien-item:hover {
+    transform: translateX(5px);
+}
+
+.medien-icon {
+    font-size: 2.5rem;
+    flex-shrink: 0;
+}
+
+.medien-content h3 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
+.medien-author {
+    color: var(--orange);
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.medien-desc {
+    color: var(--gray);
+    margin-bottom: 12px;
+}
+
+.medien-link {
+    color: var(--orange);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.medien-link:hover {
+    text-decoration: underline;
+}
+
 /* Join Section */
 .join {
     text-align: center;
+    background: var(--light-gray);
 }
 
 .join > .container > p {
@@ -195,54 +259,47 @@ section h2 {
     margin-bottom: 30px;
 }
 
-.signup-form {
-    max-width: 500px;
-    margin: 0 auto 30px;
+/* Kontakt Optionen */
+.contact-options {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    max-width: 500px;
+    margin: 40px auto 0;
 }
 
-.signup-form input {
-    padding: 15px 20px;
-    border: 2px solid #ddd;
-    border-radius: 10px;
-    font-size: 1rem;
-    font-family: inherit;
-}
-
-.signup-form input:focus {
-    outline: none;
-    border-color: var(--orange);
-}
-
-.signup-form button {
-    background: var(--orange);
-    color: var(--white);
-    border: none;
-    padding: 15px 30px;
-    border-radius: 10px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background 0.2s;
-}
-
-.signup-form button:hover {
-    background: #e07b00;
-}
-
-.contact-alt {
-    color: var(--gray);
-}
-
-.contact-alt a {
-    color: var(--orange);
+.contact-big {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 30px;
+    border-radius: 12px;
     text-decoration: none;
+    color: var(--white);
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.contact-alt a:hover {
-    text-decoration: underline;
+.contact-big:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.contact-big.telegram {
+    background: #0088cc;
+}
+
+.contact-big.nostr {
+    background: #8b5cf6;
+}
+
+.contact-big.email {
+    background: var(--dark);
+}
+
+.contact-icon {
+    font-size: 1.5rem;
 }
 
 /* Footer */
@@ -279,5 +336,9 @@ section h2 {
     .logo {
         font-size: 1rem;
     }
+    
+    .medien-item {
+        flex-direction: column;
+        text-align: center;
+    }
 }
-
