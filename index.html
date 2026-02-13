@@ -16,6 +16,7 @@
             <nav class="nav">
                 <a href="#about">Über uns</a>
                 <a href="#benefits">Vorteile</a>
+                <a href="#medien">Medien</a>
                 <a href="#join">Mitmachen</a>
             </nav>
         </div>
@@ -45,9 +46,9 @@
                     <p>Zugang zu Unterrichtsmaterialien, Arbeitsblättern und Projektideen für verschiedene Jahrgangsstufen.</p>
                 </div>
                 <div class="card">
-                    <div class="icon">🎓</div>
-                    <h3>Weiterbildung</h3>
-                    <p>Webinare, Workshops und Austauschrunden zu didaktischen Ansätzen und fachlichen Grundlagen.</p>
+                    <div class="icon">🎙️</div>
+                    <h3>Medien</h3>
+                    <p>Podcasts, YouTube-Videos und andere Medien von Lehrern zum Thema Bitcoin im Unterricht.</p>
                 </div>
             </div>
         </div>
@@ -65,29 +66,56 @@
         </div>
     </section>
 
+    <section id="medien" class="medien">
+        <div class="container">
+            <h2>Medien von Lehrern</h2>
+            <p class="section-intro">Hier sammeln wir Podcasts, YouTube-Videos und andere Inhalte von Lehrern zum Thema Bitcoin im Unterricht.</p>
+            
+            <div class="medien-list">
+                <div class="medien-item">
+                    <div class="medien-icon">🎧</div>
+                    <div class="medien-content">
+                        <h3>Münzweg Podcast</h3>
+                        <p class="medien-author">von Manuel und Marcus</p>
+<p class="medien-desc">Der Podcast für Bitcoin-Neulinge und Fortgeschrittene.</p>
+                        <a href="https://muenzweg.de" target="_blank" class="medien-link">→ Zum Podcast</a>
+                    </div>
+                </div>
+                
+                <div class="medien-item">
+                    <div class="medien-icon">📺</div>
+                    <div class="medien-content">
+                        <h3>Dein Kanal hier?</h3>
+                        <p class="medien-author">Von dir</p>
+                        <p class="medien-desc">Hast du einen Podcast, YouTube-Kanal oder Blog zum Thema Bitcoin & Unterricht? Melde dich in der Telegram-Gruppe!</p>
+                        <a href="https://t.me/bitcoinunterrichten" target="_blank" class="medien-link">→ In der Gruppe vorstellen</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="join" class="join">
         <div class="container">
             <h2>Werde Teil des Netzwerks</h2>
-            <p>Interesse? Trage dich in unseren Verteiler ein oder schreib uns direkt.</p>
+            <p>Interesse? Tritt direkt der Telegram-Gruppe bei oder schreib uns per Nostr/E-Mail.</p>
             
-            <form class="signup-form" id="signupForm">
-                <input type="text" placeholder="Dein Name" required>
-                <input type="email" placeholder="Deine E-Mail" required>
-                <input type="text" placeholder="Schulart / Fächer (optional)">
-                <button type="submit">Eintragen</button>
-            </form>
-            
-            <p class="contact-alt">
-
-                <strong>Am schnellsten:</strong><br>
-                <a href="https://t.me/bitcoinunterrichten" target="_blank">📱 t.me/bitcoinunterrichten</a>
-            </p>
-            <p class="contact-alt" style="margin-top: 10px;">
-                <a href="https://primal.net/p/npub1lgj58p4zl50xpcp0p9l7gdmx7nz3s2vpwa5l34d5890fr3huga0s2q5xrk" target="_blank">🔑 Nostr</a>
-            </p>
-            <p class="contact-alt" style="margin-top: 15px;">
-                E-Mail: <a href="mailto:kontakt@bitcoinunterrichten.de">kontakt@bitcoinunterrichten.de</a>
-            </p>
+            <div class="contact-options">
+                <a href="https://t.me/bitcoinunterrichten" target="_blank" class="contact-big telegram">
+                    <span class="contact-icon">📱</span>
+                    <span class="contact-text">t.me/bitcoinunterrichten</span>
+                </a>
+                
+                <a href="https://primal.net/p/npub1lgj58p4zl50xpcp0p9l7gdmx7nz3s2vpwa5l34d5890fr3huga0s2q5xrk" target="_blank" class="contact-big nostr">
+                    <span class="contact-icon">🔑</span>
+                    <span class="contact-text">Nostr</span>
+                </a>
+                
+                <a href="mailto:kontakt@bitcoinunterrichten.de" class="contact-big email">
+                    <span class="contact-icon">✉️</span>
+                    <span class="contact-text">E-Mail</span>
+                </a>
+            </div>
         </div>
     </section>
 
@@ -100,3 +128,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
