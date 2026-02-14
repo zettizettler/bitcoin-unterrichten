@@ -341,4 +341,29 @@ section h2 {
         flex-direction: column;
         text-align: center;
     }
+    .nav-donate {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #F7931A; /* Bitcoin-Orange */
+    font-weight: 700;
+    padding: 8px 16px;
+    border: 2px solid #F7931A;
+    border-radius: 20px;
+    transition: all 0.2s;
+}
+
+.nav-donate:hover {
+    background: #F7931A;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Mobile Anpassung */
+@media (max-width: 768px) {
+    .nav-donate {
+        margin-left: 15px;
+        padding: 6px 12px;
+        font-size: 0.9rem;
+    }
+}
 }
