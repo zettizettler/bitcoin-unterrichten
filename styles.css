@@ -365,5 +365,56 @@ section h2 {
         padding: 6px 12px;
         font-size: 0.9rem;
     }
+    .impressum {
+    background: var(--light-gray);
+    padding: 60px 0;
+    font-size: 0.95rem;
+}
+
+.impressum h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.impressum-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.impressum-content h3 {
+    font-size: 1.2rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: var(--dark);
+}
+
+.impressum-content p {
+    color: var(--gray);
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+/* Spenden-Button im Header */
+.nav-donate {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #F7931A;
+    font-weight: 700;
+    padding: 8px 16px;
+    border: 2px solid #F7931A;
+    border-radius: 20px;
+    transition: all 0.2s;
+}
+
+.nav-donate:hover {
+    background: #F7931A;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .nav-donate {
+        margin-left: 15px;
+        padding: 6px 12px;
 }
 }
