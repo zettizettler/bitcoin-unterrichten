@@ -68,6 +68,23 @@ body {
     color: var(--orange);
 }
 
+/* Spenden-Button */
+.nav-donate {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #F7931A;
+    font-weight: 700;
+    padding: 8px 16px;
+    border: 2px solid #F7931A;
+    border-radius: 20px;
+    transition: all 0.2s;
+}
+
+.nav-donate:hover {
+    background: #F7931A;
+    color: white;
+}
+
 /* Hero */
 .hero {
     background: linear-gradient(135deg, var(--orange-light) 0%, var(--white) 100%);
@@ -98,7 +115,7 @@ body {
     text-decoration: none;
     font-weight: 600;
     font-size: 1.1rem;
-transition: transform 0.2s, box-shadow 0.2s;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .cta-button:hover {
@@ -221,7 +238,6 @@ section h2 {
     font-size: 2.5rem;
     flex-shrink: 0;
 }
-
 .medien-content h3 {
     font-size: 1.3rem;
     margin-bottom: 5px;
@@ -294,10 +310,6 @@ section h2 {
     background: #8b5cf6;
 }
 
-.contact-big.email {
-    background: var(--dark);
-}
-
 .contact-icon {
     font-size: 1.5rem;
 }
@@ -310,118 +322,16 @@ section h2 {
     padding: 30px 0;
 }
 
-/* Mobile */
+.footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Mobile Anpassungen */
 @media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2rem;
-    }
-    
-    .hero-text {
-        font-size: 1rem;
-    }
-    
-    .nav a {
-        margin-left: 15px;
-        font-size: 0.9rem;
-    }
-    
-    section h2 {
-        font-size: 1.8rem;
-    }
-    
-    .logo-img {
-        height: 30px;
-    }
-    
-    .logo {
-        font-size: 1rem;
-    }
-    
-    .medien-item {
-        flex-direction: column;
-        text-align: center;
-    }
-    .nav-donate {
-    margin-left: 25px;
-    text-decoration: none;
-    color: #F7931A; /* Bitcoin-Orange */
-    font-weight: 700;
-    padding: 8px 16px;
-    border: 2px solid #F7931A;
-    border-radius: 20px;
-    transition: all 0.2s;
-}
-
-.nav-donate:hover {
-    background: #F7931A;
-    color: white;
-    transform: translateY(-2px);
-}
-
-/* Mobile Anpassung */
-@media (max-width: 768px) {
-    .nav-donate {
-        margin-left: 15px;
-        padding: 6px 12px;
-        font-size: 0.9rem;
-    }
-    .impressum {
-    background: var(--light-gray);
-    padding: 60px 0;
-    font-size: 0.95rem;
-}
-
-.impressum h2 {
-    font-size: 2rem;
-    margin-bottom: 40px;
-}
-
-.impressum-content {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.impressum-content h3 {
-    font-size: 1.2rem;
-    margin-top: 30px;
-    margin-bottom: 15px;
-    color: var(--dark);
-}
-
-.impressum-content p {
-    color: var(--gray);
-    margin-bottom: 15px;
-    line-height: 1.8;
-}
-
-/* Spenden-Button im Header */
-.nav-donate {
-    margin-left: 25px;
-    text-decoration: none;
-    color: #F7931A;
-    font-weight: 700;
-    padding: 8px 16px;
-    border: 2px solid #F7931A;
-    border-radius: 20px;
-    transition: all 0.2s;
-}
-
-.nav-donate:hover {
-    background: #F7931A;
-    color: white;
-}
-
-@media (max-width: 768px) {
-    .nav-donate {
-        margin-left: 15px;
-        padding: 6px 12px;
-        font-size: 0.9rem;
-    }
-    @media (max-width: 768px) {
     .header {
         padding: 10px 0;
-        position: relative; /* Nicht fixed, damit es nicht im Weg ist */
+        position: relative;
     }
     
     .header .container {
@@ -434,27 +344,63 @@ section h2 {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 8px;
+        gap: 10px;
         width: 100%;
     }
     
     .nav a {
         margin-left: 0;
-        font-size: 0.8rem; /* Kleinere Schrift */
-        padding: 4px 8px;
+        font-size: 0.95rem;
+        padding: 6px 12px;
     }
     
     .nav-donate {
         margin-left: 0;
-        padding: 6px 12px;
-        font-size: 0.8rem;
+        padding: 10px 20px;
+        font-size: 0.95rem;
+        border: 2px solid #F7931A;
+        border-radius: 25px;
+        color: #F7931A;
+        background: transparent;
     }
     
-    /* Hero weiter nach oben schieben */
-    .hero {
-        padding: 180px 0 80px;
+    .nav-donate:hover {
+        background: #F7931A;
+        color: white;
     }
-}
-}
-}
+    
+    .hero {
+        padding: 200px 0 80px;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-text {
+        font-size: 1rem;
+    }
+    
+    section h2 {
+        font-size: 1.8rem;
+    }
+    
+    .logo-img {
+        height: 35px;
+    }
+    
+    .logo {
+        font-size: 1.1rem;
+    }
+    
+    .medien-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .contact-options {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
