@@ -418,6 +418,43 @@ section h2 {
         padding: 6px 12px;
         font-size: 0.9rem;
     }
+    @media (max-width: 768px) {
+    .header {
+        padding: 10px 0;
+        position: relative; /* Nicht fixed, damit es nicht im Weg ist */
+    }
+    
+    .header .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        width: 100%;
+    }
+    
+    .nav a {
+        margin-left: 0;
+        font-size: 0.8rem; /* Kleinere Schrift */
+        padding: 4px 8px;
+    }
+    
+    .nav-donate {
+        margin-left: 0;
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+    
+    /* Hero weiter nach oben schieben */
+    .hero {
+        padding: 180px 0 80px;
+    }
+}
 }
 }
 }
