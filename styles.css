@@ -403,57 +403,44 @@ section h2 {
         flex-wrap: wrap;
         justify-content: center;
     }
-    /* Join & Spenden Section nebeneinander */
+  /* Join & Spenden Section nebeneinander */
 .join-spenden {
     background: var(--light-gray);
     padding: 80px 0;
 }
 
 .join-spenden-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     gap: 40px;
-    align-items: start;
+    align-items: flex-start;
 }
 
-.join-section {
+.join-section, .spenden-section {
+    flex: 1;
     text-align: center;
 }
 
-.join-section h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.join-section p {
-    color: var(--gray);
-    margin-bottom: 30px;
-}
-
-.spenden-section {
-    text-align: center;
-}
-
-.spenden-section h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.spenden-section p {
-    color: var(--gray);
-    margin-bottom: 30px;
-}
-
+/* Widget kompakter machen */
 .widget-container {
-    max-width: 400px;
+    max-width: 300px;
     margin: 0 auto;
+    transform: scale(0.85); /* Kleinere Darstellung */
+    transform-origin: center top;
+}
+
+lightning-widget {
+    --tw-widget-max-width: 280px;
 }
 
 /* Mobile: Untereinander */
 @media (max-width: 768px) {
     .join-spenden-grid {
-        grid-template-columns: 1fr;
-        gap: 60px;
+        flex-direction: column;
     }
-}
+    
+    .widget-container {
+        transform: scale(1); /* Auf Mobile normalgröße */
+    }
 }
