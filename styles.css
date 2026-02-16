@@ -427,10 +427,10 @@ section h2 {
 /* Widget kleiner */
 .widget-container {
     max-width: 300px;
-    margin-top: 40px;  /* ← Diese Zeile ändern */
     margin: 0 auto;
     transform: scale(0.75);
     transform-origin: center top;
+    margin-top: 40px;  /* ← Diese Zeile ändern */
 }
 
 /* Mobile: Untereinander */
