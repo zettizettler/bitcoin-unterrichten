@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Twentyuno Lightning Widget -->
+    <script src="https://embed.twentyuno.net/js/app.js"></script>
 </head>
 <body>
     <header class="header">
@@ -19,7 +21,7 @@
                 <a href="#medien">Medien</a>
                 <a href="#materialien">Materialien</a>
                 <a href="#join">Mitmachen</a>
-                <a href="lightning:7cab0d87a0cd3d9d@coinos.io" class="nav-donate">⚡ Spenden</a>
+                <a href="#spenden" class="nav-donate">⚡ Spenden</a>
             </nav>
         </div>
     </header>
@@ -75,9 +77,9 @@
             
             <div class="medien-list">
                 <div class="medien-item">
-                    <div class="medien-icon">📺</div>
+<div class="medien-icon">📺</div>
                     <div class="medien-content">
-<h3>Bitcoin und das Bildungswesen</h3>
+                        <h3>Bitcoin und das Bildungswesen</h3>
                         <p class="medien-author">Jens Wegmann auf der BTC23</p>
                         <p class="medien-desc">Bitcoin und Bildungswesen – Wieso Bitcoin kein Thema an Schulen ist</p>
                         <a href="https://youtu.be/c-xxn9Y3_1g" target="_blank" class="medien-link">→ Video ansehen</a>
@@ -145,10 +147,9 @@
                 
                 <div class="medien-item">
                     <div class="medien-icon">📄</div>
-                    <div class="medien-content">
+<div class="medien-content">
                         <h3>Erfahrungsbericht Projektwoche</h3>
-
-                    <p class="medien-author">Zetti auf Nostr</p>
+                        <p class="medien-author">Zetti auf Nostr</p>
                         <p class="medien-desc">Fünfteilige Serie über die Durchführung einer Bitcoin-Projektwoche in der 9. Klasse – mit Verlinkung zu allen Teilen.</p>
                         <a href="https://primal.net/a/naddr1qvzqqqr4gupzprmfe9v7zxue6049gmhx0exqdu338g505hpd5jy9cnxa0fr79ra0qqn8getfdskn2ttyv4ez6anfv4e8gefdw3skwttxd9hxzmr9946kuepdvesh56t5lt792y" target="_blank" class="medien-link">→ Auf Nostr lesen</a>
                     </div>
@@ -157,33 +158,55 @@
         </div>
     </section>
 
-    <section id="join" class="join">
+    <section id="join-spenden" class="join-spenden">
         <div class="container">
-            <h2>Mitmachen</h2>
-            <p>Interesse? Tritt direkt der Telegram-Gruppe bei oder kontaktiere uns per Nostr.</p>
-            
-            <div class="contact-options">
-                <a href="https://t.me/bitcoinunterrichten" target="_blank" class="contact-big telegram">
-                    <span class="contact-icon">📨</span>
-                    <span class="contact-text">Telegram</span>
-                </a>
-                
-                <a href="https://primal.net/p/npub1lgj58p4zl50xpcp0p9l7gdmx7nz3s2vpwa5l34d5890fr3huga0s2q5xrk" target="_blank" class="contact-big nostr">
-                    <span class="contact-icon">🔑</span>
-                    <span class="contact-text">Nostr</span>
-                </a>
+            <div class="join-spenden-grid">
+                <!-- Links: Mitmachen -->
+                <div id="join" class="join-section">
+                    <h2>Mitmachen</h2>
+                    <p>Interesse? Tritt direkt der Telegram-Gruppe bei oder kontaktiere uns per Nostr.</p>
+                    
+                    <div class="contact-options">
+                        <a href="https://t.me/bitcoinunterrichten" target="_blank" class="contact-big telegram">
+                            <span class="contact-icon">📨</span>
+                            <span class="contact-text">Telegram</span>
+                        </a>
+                        
+                        <a href="https://primal.net/p/npub1lgj58p4zl50xpcp0p9l7gdmx7nz3s2vpwa5l34d5890fr3huga0s2q5xrk" target="_blank" class="contact-big nostr">
+                            <span class="contact-icon">🔑</span>
+                            <span class="contact-text">Nostr</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Rechts: Spenden Widget -->
+                <div id="spenden" class="spenden-section">
+                    <h2>Spenden</h2>
+                    <p>Unterstütze die Initiative mit Sats via Lightning.</p>
+                    
+                    <div class="widget-container">
+                        <lightning-widget 
+                            name="Bitcoin unterrichten" 
+                            accent="#F7931A" 
+                            to="7cab0d87a0cd3d9d@coinos.io" 
+                            amounts="210,2100,21000" 
+                            button-text="⚡ Sats spenden">
+                        </lightning-widget>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <script src="script.js"></script>
-</body>
-        <footer class="footer">
+    <footer class="footer">
         <div class="container">
             <p>
                 © 2025 Bitcoin unterrichten | 
-                <a href="impressum.html" style="color: #fff; text-decoration: underline;">Impressum & Datenschutz</a>
+                <a href="Impressum.html">Impressum & Datenschutz</a>
             </p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
